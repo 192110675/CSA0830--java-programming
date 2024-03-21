@@ -1,0 +1,31 @@
+public class ArithmeticExceptionDemo {
+    public static void main(String[] args) {
+        // Divided by Zero
+        try {
+            int result = 10 / 0; // Attempting to divide by zero
+        } catch (ArithmeticException e) {
+            System.out.println("Arithmetic Exception: Divided by Zero");
+        }
+        
+        // Logarithm of negative or Zero
+        try {
+            double result = Math.log(0); // Attempting to take logarithm of zero
+        } catch (ArithmeticException e) {
+            System.out.println("Arithmetic Exception: Logarithm of negative or Zero");
+        }
+        
+        // Tan 90 Degree
+        try {
+            double result = Math.tan(Math.toRadians(90)); // Attempting to find tangent of 90 degrees
+        } catch (ArithmeticException e) {
+            System.out.println("Arithmetic Exception: Tan 90 Degree");
+        }
+        
+        // Zero power Zero
+        try {
+            double result = Math.pow(0, 0); // Attempting to raise zero to the power of zero
+        } catch (ArithmeticException e) {
+            System.out.println("Arithmetic Exception: Zero power Zero");
+        }
+    }
+}
